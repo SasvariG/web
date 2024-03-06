@@ -52,13 +52,13 @@
 <div id="div2"></div>
 
 <script>
-    const colorPicker = document.getElementById('szin'); // megkapod a színt
+    const szin = document.getElementById('szin'); // megkapod a színt
 
-    const displayText = document.getElementById('szövegszín'); //megadod mi változzon
-    const displaydiv = document.getElementById('div'); //megadod mi változzon
+    const displayText = document.getElementById('szövegszín'); //megadod hogy mi változzon
+    const displaydiv = document.getElementById('div'); //megadod hogy mi változzon
     const displaydiv2 = document.getElementById('div2'); //megadod mi változzon
 
-    colorPicker.addEventListener('input', function() { //változás figyelő ,  function
+    szin.addEventListener('input', function() { //változás figyelő ,  function
         const selectedColor = szin.value;  // megkapott színt feldolgozza
         displayText.style.color = selectedColor; //megváltozik az amit megadtál
         displaydiv.style.backgroundColor = selectedColor  //megváltozik az amit megadtál
