@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szín meg a választó</title>
+<style>
+    div{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: block;
+        float:left;
+    }
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weblap sasg</title>
+<link rel="stylesheet" href="style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav >
+        <a href="keplink.html">Képlink feladat</a> |
+        <a href="lista.html">Lista</a> |
+        <a href="tablazat.html">Táblázat</a> |
+        <a href="weblap.html"> weblap</a> |
+        <a href="index.html">főoldal</a>|
+        <a href="div.html">Div</a>|
+        <a href="4evszak.html">4 évszak</a>|
+        <a href="szamológép.html">Számológép</a>|
+        <a href="szinválasztó.html">Színválasztó</a>|
+      </nav> 
+
+<h1>Válassz színt</h1>
+<input type="color" id="szin">
+
+<p id="szövegszín">Szia Heló.</p>
+<div id="div"></div>
+<div id="div2"></div>
+
+<script>
+    const colorPicker = document.getElementById('szin'); // megkapod a színt
+
+    const displayText = document.getElementById('szövegszín'); //megadod mi változzon
+    const displaydiv = document.getElementById('div'); //megadod mi változzon
+    const displaydiv2 = document.getElementById('div2'); //megadod mi változzon
+
+    colorPicker.addEventListener('input', function() { //változás figyelő ,  function
+        const selectedColor = szin.value;  // megkapott színt feldolgozza
+        displayText.style.color = selectedColor; //megváltozik az amit megadtál
+        displaydiv.style.backgroundColor = selectedColor  //megváltozik az amit megadtál
+        displaydiv2.style.backgroundColor = selectedColor  //megváltozik az amit megadtál
+        
+    });
+</script>
+
+</body>
+</html>
