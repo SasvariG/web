@@ -8,8 +8,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+
+        
         /* Itt lehetne saját CSS stílusokat hozzáadni */
+        #lebeg:hover {
+            
+            transform: scale(1.1);
+            transition: 1s;
+        }
+        #lebeg {
+            transition: 1s;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+     
     </style>
 </head>
 
@@ -35,42 +51,56 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Kapcsolat</a>
                     </li>
-                </ul>
+                    
             </div>
         </div>
     </nav>
 
     <div id="main-content" class="container py-5">
         <section id="home" class="text-center">
-            <img src="img/vas.png" class="img-fluid rounded" alt="Étterem vagy kávézó">
+            <img src="vas.png" class="img-fluid rounded" alt="Étterem vagy kávézó" style="max-width: 600px;" >
             <h2>Üdvözlünk a Vas étterem és kávézó oldalán!</h2>
             <p>Üdvözöljük éttermünk oldalán. Ételeink frissek a kávénk meleg.</p>
         </section>
 
         <section id="menu" class="mt-5">
-            <h2 class="text-center">Étlap</h2>
+            <h2 class="text-center" style="padding-bottom: 25px;">Étlap</h2>
+
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-warning">
-                        <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Házi szósz , Hús , uborka , Paradicsom </p>
-                            <p class="card-text">Ár: 1000 Ft</p>
+                <div class="col-md-6 col-lg-6 mb-6" style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
+                        <a href="">
+                            <div class="card-body" >
+                                <div class=" float-end">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/McDonald%27s_Quarter_Pounder_with_Cheese%2C_United_States.jpg/1200px-McDonald%27s_Quarter_Pounder_with_Cheese%2C_United_States.jpg" alt="Fekte kv" title="fekete kv" style="width:150px" height="100px" >
+                                </div>
+                                <h5 class="card-title">Hamburger</h5>
+                                <p class="card-text">Házi szósz , Hús , uborka , Paradicsom </p>
+                                <p class="card-text">Ár: 1000 Ft</p>
+                        </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-success">
+
+                <div class="col-md-6 col-lg-6 mb-6" style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
                         <div class="card-body">
+                            
+                                <div class=" float-end"> 
+                                      <img src="https://madalcafe.hu/wp-content/uploads/2020/09/Latte-art.jpg" alt="Fekte kv" style="width:150px" height="100px">
+                                     </div>
+
                             <h5 class="card-title">Kávé </h5>
                             <p class="card-text">Meleg kávé , jó áron</p>
                             <p class="card-text">Ár: 500ft</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-info">
+
+                <div class="col-md-6 col-lg-6 mb-6 " style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
                         <div class="card-body">
+                            <div class=" float-end"> <img src="https://www.mindmegette.hu/images/364/Social/lead_Social_pizzateszta-tomoritett.jpg" alt="Fekte kv" style="width:150px" height="100px" > </div>
                             <h5 class="card-title">Pizza</h5>
                             <p class="card-text">Kukorica ,paradicsom szósz , pizza tészta, sajt </p>
                             <p class="card-text">Ár: 1200ft</p>
@@ -78,9 +108,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-danger">
+                <div class="col-md-6 col-lg-6 mb-6" style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
                         <div class="card-body">
+                            <div class=" float-end">  <img src="https://epa.oszk.hu/00800/00804/00449/magyarorszag_rantott_hus.jpg" alt="Fekte kv" style="width:150px" height="100px" > </div>
                             <h5 class="card-title">Rántott hús</h5>
                             <p class="card-text"> Friss és finom </p>
                             <p class="card-text">Ár: 900ft</p>
@@ -88,9 +119,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-muted">
+                <div class="col-md-6 col-lg-6 mb-6" style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
                         <div class="card-body">
+                            <div class=" float-end">  <img src="https://kep.cdn.indexvas.hu/1/0/4811/48115/481154/48115404_c540f034e98d4a899fc81651b6cb35a1_wm.jpg" alt="Fekte kv" style="width:150px" height="100px" > </div>
                             <h5 class="card-title">Sült krumpli</h5>
                             <p class="card-text"> Friss és finom </p>
                             <p class="card-text">Ár: 850ft</p>
@@ -98,20 +130,27 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-primary">
+                <div class="col-md-6 col-lg-6 mb-6 " style="padding-bottom: 25px;">
+                    <div class="card bg-secondary" id="lebeg">
                         <div class="card-body">
+                            <div class=" float-end">  <img src="https://kavearuhaz.hu/wp-content/uploads/2023/11/forro-csoki-blog.jpg" alt="Fekte kv" style="width:150px" height="100px" > </div>
                             <h5 class="card-title">Forró csoki</h5>
                             <p class="card-text"> Figyelem a termék forró </p>
                             <p class="card-text">Ár: 850ft</p>
                         </div>
                     </div>
                 </div>
+                        <hr  style="margin: auto; padding-bottom: 25px; width: 50%;">
+                        <br>
 
                 <div class="col-md-12 col-lg-12 mb-12 " style="padding-bottom: 25px;">
-                    <div class="card bg-primary">
+                    <div class="card bg-danger" id="lebeg">
                         <div class="card-body">
-                            <h5 class="card-title">Akció!</h5>
+                        
+                            <h5 class="card-title">Akció!</h5> 
+
+                              <div class=" float-end">  <img src="https://www.tunderkonyha.hu/files/product-1317/hamburger_menu.jpg" alt="Fekte kv" style="width:150px" height="120px" > </div>
+
                             <p class="card-text">  <b>Vas hamburger és krumpli + Üditő </b> </p>
                             <p class="card-text" style="font-weight: bolder;">Kihagyhatatlan ajánlat.</p>
                             <p class="card-text"> CSAK 1900ft </p>
@@ -119,10 +158,13 @@
                     </div>
                 </div>
                 
+                <hr  style="margin: auto; padding-bottom: 25px; width: 50%;">
+                <br>
             
                 <div class="col-md-8 col-lg-8 mb-8">
-                    <div class="card bg-primary">
-                        <div class="card-body">
+                    <div class="card bg-primary " id="lebeg">
+                        <div class="card-body"> <div class=" float-end">
+                            <img src="https://madalcafe.hu/wp-content/uploads/2020/09/Latte-art.jpg" alt="Fekte kv" style="width:150px" height="100px" > </div>
                             <h5 class="card-title">Latte kávé</h5>
                             <p class="card-text"> Finom meg latte </p>
                             <p class="card-text">500ft</p>
@@ -130,31 +172,48 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card bg-primary">
-                        <div class="card-body">
-                            <h5 class="card-title"> Vas burger</h5>
-                            <p class="card-text"> Házi szósz , Hús , uborka , Paradicsom  </p>
-                            <p class="card-text"> 1200ft</p>
+               
+                    <div class="col-md-4 col-lg-4 mb-4">
+                        <div class="card bg-primary" id="lebeg">
+                            <a href="https://www.w3schools.com/">
+                                <div class="card-body">
+                                   
+
+                                    <h5 class="card-title"> Vas burger</h5>
+                                    <p class="card-text"> Házi szósz , Hús , uborka , Paradicsom  </p>
+                                    <p class="card-text"> 1200ft</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
+               
 
-                <div class="col-md-3 col-lg-3 mb-3">
-                    <div class="card bg-primary">
-                        <div class="card-body">
+                <div class="col-md-3 col-lg-3 col-md-12">
+                    <div class="card bg-primary " id="lebeg" >
+                        <div class="card-body"> 
                             <h5 class="card-title">Almás sütemény</h5>
                             <p class="card-text"> Figyelem a termék forró </p>
                             <p class="card-text">Ár: 850ft</p>
+
+                            <div class="clearfix">
+                                <div class=" mb-2 ">
+                                    <img src="https://annuskam.hu/wp-content/uploads/2020/10/almas-pite.jpg" alt="almás süti" style="width:250px" height="100px" >
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-9 col-lg-9 mb-9">
-                    <div class="card bg-primary">
-                        <div class="card-body">
+                    <div class="card bg-primary" id="lebeg">
+                        <div class="card-body"> <div class=" float-end">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG" alt="Fekte kv" style="width:150px" height="100px" >
+                        </div>
                             <h5 class="card-title"> Fekete kávé</h5>
-                            <p class="card-text"> Figyelem a termék forró </p>
+                            <p class="card-text"> Figyelem a termék forró </p>   
                             <p class="card-text">Ár: 850ft</p>
+
+                              
+
                         </div>
                     </div>
                 </div>
@@ -184,8 +243,11 @@
         </section>
     </div>
 
+</div>
+
     <footer class="bg-dark text-light text-center py-3">
-        <p>©Copyrights 2024 Vas Étterem vagy kávézó</p>
+        <p>©Copyrights 2024 Vas Étterem és kávézó <br>
+        Az oldal tanulmányi célból jött létre </p>
     </footer>
 
     <!-- Bootstrap JavaScript -->
